@@ -10,13 +10,14 @@ spécifiques à installer. Le script gère également les dépendances des paque
 
 1. Assurez-vous d'avoir les privilèges sudo pour exécuter certaines commandes nécessitant des
 autorisations élevées.
-2. Exécutez le script en utilisant la commande suivante :
+2. Assurez vous d'avoir git installé sur votre machine
+3. Exécutez le script en utilisant la commande suivante :
 
     ```bash
     ./UnikinPackage.bash
     ```
 
-3. Suivez les instructions affichées à l'écran pour choisir une option dans le menu.
+4. Suivez les instructions affichées à l'écran pour choisir une option dans le menu.
 
 ## Fonctionnalités
 
