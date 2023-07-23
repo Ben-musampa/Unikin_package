@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Vérifiez que l'utilisateur a les privilèges sudo
+if [[ $EUID -ne 0 ]]; then
+    echo "Vous devez être root pour exécuter ce script."
+    exit 1
+fi
 echo ""
 
 printf "menu :\n\n"
@@ -46,7 +51,7 @@ done
 
 if [ "$choix" = "1" ];then
 
-cd /home/`users`/Téléchargements
+cd /home/`users`/Downloads
 
 git clone https://github.com/Ben-musampa/Unikin_package
 
@@ -81,7 +86,7 @@ fi
 
 elif [ "$choix" = "2" ]; then
 
-cd /home/`users`/Téléchargements
+cd /home/`users`/Downloads
 
 git clone https://github.com/Ben-musampa/Unikin_package
 
@@ -162,7 +167,7 @@ if [[ -d "$k" ]]; then
 
 for s in ${tt[*]}; do
 
-cd /home/`users`/Téléchargements/Unikin_package/package/
+cd /home/`users`/Downloads/Unikin_package/package/
 
 cp -v `find . -type f -name "*-$s.deb"` /home/`users`/tAmponss
 
@@ -176,7 +181,7 @@ cd ..
 
 rm -r tAmponss/
 
-cd /home/`users`/Téléchargements
+cd /home/`users`/Downloads
 
 rm -r Unikin_package/
 
@@ -186,7 +191,7 @@ mkdir /home/`users`/tAmponss
 
 for s in ${tt[*]}; do
 
-cd /home/`users`/Téléchargements/Unikin_package/package/
+cd /home/`users`/Downloads/Unikin_package/package/
 
 cp -v `find . -type f -name "*-$s.deb"` /home/`users`/tAmponss
 
@@ -201,7 +206,7 @@ cd ..
 
 rm -r tAmponss/
 
-cd /home/`users`/Téléchargements
+cd /home/`users`/Downloads
 
 rm -r Unikin_package/
 fi
