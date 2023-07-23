@@ -10,7 +10,10 @@ spécifiques à installer. Le script gère également les dépendances des paque
 
 1. Assurez-vous d'avoir les privilèges sudo pour exécuter certaines commandes nécessitant des
 autorisations élevées.
-2. Assurez vous d'avoir git installé sur votre machine
+2. Assurez vous d'avoir git installé sur votre machine, sinon installer avec la commande:
+   ```bash
+    sudo apt install git-all
+    ```
 3. Exécutez le script en utilisant la commande suivante :
 
     ```bash
