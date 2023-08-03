@@ -47,7 +47,7 @@ effectuez des tests dans un environnement contrôlé avant de l'utiliser dans un
 production. L'auteur du script n'est pas responsable des éventuels dommages causés par
 l'utilisation de ce script.
 
-## Contribuer
+## Contribution
 
 Les contributions à l'amélioration de ce script bash sont les bienvenues ! Si vous souhaitez ajouter des nouvelles fonctionnalités ou améliorer ceux existants, veuillez soumettre une demande de pull (un pull request) avec une description détaillée des modifications apportées.
 
